@@ -8,6 +8,8 @@ namespace Exercise1
 {
     public class Ex1
     { 
+        
+        //Simple harness
         static async Task Main()
         {            
             var urlEndPoints = new List<string>(){"http://google.com", "http://github.com", "http://yahoo.com"};            
@@ -48,6 +50,7 @@ namespace Exercise1
 
     public class Functions
     {
+        /// Simple function return the length of the contents of a given url, can be cancelled
         public async Task<int> MakeGetCall(string url, HttpClient httpClient, CancellationToken ct)
         {
             int aggregatedLength = 0;
